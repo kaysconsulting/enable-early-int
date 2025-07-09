@@ -49,14 +49,12 @@ export default function Hero() {
                   <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-2 border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-4 text-lg font-semibold bg-white/80 backdrop-blur-sm hover:border-teal-700 transition-all duration-300"
+              <Link 
+                href="/services"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 px-8 py-4 border-2 border-azure-700 text-azure-700 hover:bg-azure-50 hover:border-azure-800 hover:text-azure-800 bg-white/80 backdrop-blur-sm transition-all duration-300"
               >
-                <Link href="/services">See How We Help Families</Link>
-              </Button>
+                See How We Help Families
+              </Link>
             </div>
           </div>
 

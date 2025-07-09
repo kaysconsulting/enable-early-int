@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import ResourcesHero from "@/components/resources/ResourcesHero"
 import DownloadableResources from "@/components/resources/DownloadableResources"
 import LocalServices from "@/components/resources/LocalServices"
+import ExternalResources from "@/components/resources/ExternalResources"
 import ResourcesCTA from "@/components/resources/ResourcesCTA"
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function ResourcesPage() {
       <ResourcesHero />
       <DownloadableResources />
       <LocalServices />
+      <ExternalResources />
       <ResourcesCTA />
     </main>
   )

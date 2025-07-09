@@ -27,7 +27,7 @@ const iconMap = {
 const serviceDetails = {
   "early-childhood-intervention": {
     overview:
-      "Every child deserves the opportunity to grow, learn, and thrive. At Enable Us, our Early Childhood Intervention (ECI) services provide tailored support for children aged 0–6 with developmental delays or disabilities—helping them reach key milestones and build strong foundations for life.",
+      "Every child deserves the opportunity to grow, learn, and thrive. At Enable Early Intervention, our Early Childhood Intervention (ECI) services provide tailored support for children aged 0–6 with developmental delays or disabilities—helping them reach key milestones and build strong foundations for life.",
     subtitle: "Supporting Children Early. Empowering Families Always.",
     approaches: [
       "Developmental Assessments: Identify strengths, challenges, and next steps in your child's growth",
@@ -68,7 +68,7 @@ const serviceDetails = {
   },
   "specialised-supported-employment": {
     overview:
-      "At Enable Us, we believe that employment is more than just a job—it's about purpose, confidence, and being part of a community. Our Specialised Supported Employment services help NDIS participants find and maintain meaningful work opportunities.",
+      "At Enable Early Intervention, we believe that employment is more than just a job—it's about purpose, confidence, and being part of a community. Our Specialised Supported Employment services help NDIS participants find and maintain meaningful work opportunities.",
     subtitle: "More Than Just a Job - Purpose, Confidence, Community",
     approaches: [
       "Workplace Readiness: Build essential skills like time management and communication",
@@ -87,7 +87,7 @@ const serviceDetails = {
   },
   "community-participation": {
     overview:
-      "At Enable Us, we believe that true growth happens not just at home or in therapy—but in the heart of the community. Our Community Participation program helps NDIS participants engage with the world around them.",
+      "At Enable Early Intervention, we believe that true growth happens not just at home or in therapy—but in the heart of the community. Our Community Participation program helps NDIS participants engage with the world around them.",
     subtitle: "Building Connections, Developing Skills, Fostering Independence",
     approaches: [
       "Social & Recreational Outings: Attend community events, local attractions, and hobby groups",
@@ -106,7 +106,7 @@ const serviceDetails = {
   },
   "group-centre-activities": {
     overview:
-      "At Enable Us, we believe in the power of community. Our Group and Centre-Based Activities offer participants a safe, inclusive, and stimulating environment where they can socialise, learn, and grow—at their own pace.",
+      "At Enable Early Intervention, we believe in the power of community. Our Group and Centre-Based Activities offer participants a safe, inclusive, and stimulating environment where they can socialise, learn, and grow—at their own pace.",
     subtitle: "Safe, Inclusive, Stimulating Community Environment",
     approaches: [
       "Social Connection: Join a welcoming group and make lasting friendships",
@@ -125,7 +125,7 @@ const serviceDetails = {
   },
   "access-maintain-employment": {
     overview:
-      "At Enable Us, we believe that meaningful employment opens doors to independence, confidence, and connection. Our Access and Maintain Employment support helps NDIS participants gain the skills and opportunities they need to thrive in the workforce.",
+      "At Enable Early Intervention, we believe that meaningful employment opens doors to independence, confidence, and connection. Our Access and Maintain Employment support helps NDIS participants gain the skills and opportunities they need to thrive in the workforce.",
     subtitle: "Opening Doors to Independence, Confidence, and Connection",
     approaches: [
       "Job Readiness Training: Resume writing, interview preparation, and workplace skills",

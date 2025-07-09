@@ -12,7 +12,7 @@ export default function AboutHero() {
           <h1 className="font-poppins text-4xl font-bold tracking-tight text-teal-800 sm:text-5xl md:text-6xl">
             About
             <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              Enable Us
+              Enable Early Intervention
             </span>
           </h1>
 

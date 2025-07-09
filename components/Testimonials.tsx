@@ -7,7 +7,7 @@ export default function Testimonials() {
       name: "Sarah Johnson",
       role: "Mother of Emma (5 years old)",
       content:
-        "Enable Us has been a lifeline for our family. When Emma was diagnosed with autism at 3, we felt overwhelmed and didn't know where to start. The team not only provided excellent therapy services but also guided us through the NDIS process with such patience and care. Emma has made incredible progress, and we feel confident about her future.",
+        "Enable Early Intervention has been a lifeline for our family. When Emma was diagnosed with autism at 3, we felt overwhelmed and didn't know where to start. The team not only provided excellent therapy services but also guided us through the NDIS process with such patience and care. Emma has made incredible progress, and we feel confident about her future.",
       rating: 5,
       image: "/placeholder.svg?height=80&width=80",
       service: "Early Childhood Intervention",
@@ -16,7 +16,7 @@ export default function Testimonials() {
       name: "Michael Chen",
       role: "NDIS Participant",
       content:
-        "The support coordination team at Enable Us completely transformed my NDIS experience. They helped me understand my plan, connected me with amazing service providers, and always advocated for what I needed. I finally feel like I'm in control of my supports and working towards my goals.",
+        "The support coordination team at Enable Early Intervention completely transformed my NDIS experience. They helped me understand my plan, connected me with amazing service providers, and always advocated for what I needed. I finally feel like I'm in control of my supports and working towards my goals.",
       rating: 5,
       image: "/placeholder.svg?height=80&width=80",
       service: "Support Coordination",
@@ -25,7 +25,7 @@ export default function Testimonials() {
       name: "Lisa Thompson",
       role: "Mother of Jake (7 years old)",
       content:
-        "Jake has been receiving speech therapy through Enable Us for two years now. The improvement in his communication skills has been remarkable. What I love most is how they involve our whole family in the process and give us strategies to support Jake at home. The therapists are not just professionals—they genuinely care.",
+        "Jake has been receiving speech therapy through Enable Early Intervention for two years now. The improvement in his communication skills has been remarkable. What I love most is how they involve our whole family in the process and give us strategies to support Jake at home. The therapists are not just professionals—they genuinely care.",
       rating: 5,
       image: "/placeholder.svg?height=80&width=80",
       service: "Speech Therapy",
@@ -34,7 +34,7 @@ export default function Testimonials() {
       name: "David Wilson",
       role: "NDIS Participant",
       content:
-        "Thanks to the employment support from Enable Us, I landed my dream job in administration. They didn't just help me find work—they prepared me for interviews, supported me during my first weeks, and continue to check in regularly. I've never felt more confident and independent.",
+        "Thanks to the employment support from Enable Early Intervention, I landed my dream job in administration. They didn't just help me find work—they prepared me for interviews, supported me during my first weeks, and continue to check in regularly. I've never felt more confident and independent.",
       rating: 5,
       image: "/placeholder.svg?height=80&width=80",
       service: "Supported Employment",
@@ -126,7 +126,7 @@ export default function Testimonials() {
               Ready to Start Your Own Success Story?
             </h3>
             <p className="text-gray-600 mb-6 font-inter">
-              Join the hundreds of families who have found support, hope, and progress with Enable Us.
+              Join the hundreds of families who have found support, hope, and progress with Enable Early Intervention.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">

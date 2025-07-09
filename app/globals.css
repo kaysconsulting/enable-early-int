@@ -171,3 +171,12 @@ html {
 .card-hover {
   @apply transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl;
 }
+
+/* Fix for RedirectErrorBoundary button hover colors */
+a.border-teal-600.hover\:text-accent-foreground:hover {
+  color: #0284c7 !important; /* teal-700 - darker teal */
+}
+
+a.border-azure-600.hover\:text-accent-foreground:hover {
+  color: #0284c7 !important; /* azure-600 */
+}

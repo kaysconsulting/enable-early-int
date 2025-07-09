@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageCircle, Hand, Users, Calendar, ArrowRight } from "lucide-react"
+import { MessageCircle, Users, Briefcase, MapPin, Users as UsersIcon, Building, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -7,51 +7,91 @@ export default function Services() {
   const services = [
     {
       icon: MessageCircle,
-      title: "Speech Therapy",
+      title: "Early Childhood Intervention",
       description:
-        "Comprehensive speech and language therapy to help children communicate effectively and confidently.",
+        "Holistic, family-focused support for children with developmental delays or disabilities—delivered early to make a lasting impact.",
       features: [
-        "Articulation and phonology",
-        "Language development",
-        "Social communication skills",
-        "Feeding and swallowing support",
+        "Developmental assessments",
+        "Therapy services",
+        "Family coaching & support",
+        "NDIS-approved services",
       ],
       color: "orange",
       gradient: "from-orange-500 to-orange-600",
-    },
-    {
-      icon: Hand,
-      title: "Occupational Therapy",
-      description: "Supporting children to develop the skills needed for daily activities and participation in life.",
-      features: [
-        "Fine and gross motor skills",
-        "Sensory processing",
-        "Self-care activities",
-        "School readiness skills",
-      ],
-      color: "teal",
-      gradient: "from-teal-500 to-teal-600",
+      slug: "early-childhood-intervention",
     },
     {
       icon: Users,
       title: "Support Coordination",
-      description: "Helping families navigate services and supports to achieve their NDIS goals.",
+      description:
+        "We simplify the NDIS, helping you connect with the right providers, manage your plan, and achieve your goals.",
       features: [
-        "NDIS plan implementation",
-        "Service provider connections",
+        "NDIS plan management",
+        "Provider connections",
         "Goal setting and review",
         "Advocacy and support",
       ],
-      color: "orange",
-      gradient: "from-orange-500 to-orange-600",
-    },
-    {
-      icon: Calendar,
-      title: "Early Intervention",
-      description: "Specialized programs for infants and toddlers to promote optimal development.",
-      features: ["Developmental assessments", "Family coaching", "Play-based interventions", "Transition planning"],
       color: "teal",
       gradient: "from-teal-500 to-teal-600",
+      slug: "support-coordination",
+    },
+    {
+      icon: Briefcase,
+      title: "Specialised Supported Employment",
+      description: "Meaningful employment pathways tailored to your strengths and ambitions, with on-the-job support.",
+      features: [
+        "Workplace readiness",
+        "Tailored job matching",
+        "On-the-job coaching",
+        "Skills development",
+      ],
+      color: "orange",
+      gradient: "from-orange-500 to-orange-600",
+      slug: "specialised-supported-employment",
+    },
+    {
+      icon: MapPin,
+      title: "Community Participation",
+      description:
+        "Encouraging social engagement, skill-building, and confidence through tailored activities in your local area.",
+      features: [
+        "Social & recreational outings",
+        "Life skills development",
+        "Group participation",
+        "Cultural & creative exploration",
+      ],
+      color: "teal",
+      gradient: "from-teal-500 to-teal-600",
+      slug: "community-participation",
+    },
+    {
+      icon: UsersIcon,
+      title: "Group & Centre-Based Activities",
+      description: "Safe, fun, and engaging group programs that foster friendships, creativity, and life skills.",
+      features: [
+        "Social connection",
+        "Life skills development",
+        "Creative expression",
+        "Wellbeing & recreation",
+      ],
+      color: "orange",
+      gradient: "from-orange-500 to-orange-600",
+      slug: "group-centre-activities",
+    },
+    {
+      icon: Building,
+      title: "Access and Maintain Employment",
+      description:
+        "Practical support to gain, keep, or return to work—including job-readiness training and workplace access assistance.",
+      features: [
+        "Job readiness training",
+        "Workplace access support",
+        "Employment pathway planning",
+        "Transition support",
+      ],
+      color: "teal",
+      gradient: "from-teal-500 to-teal-600",
+      slug: "access-maintain-employment",
     },
   ]
 
@@ -113,8 +153,8 @@ export default function Services() {
                   variant="ghost"
                   className={`group/btn w-full justify-between ${
                     service.color === "orange"
-                      ? "text-orange-600 hover:text-orange-700 hover:bg-orange-50"
-                      : "text-teal-600 hover:text-teal-700 hover:bg-teal-50"
+                      ? "text-azure-700 hover:text-azure-800 hover:bg-azure-50"
+                      : "text-azure-700 hover:text-azure-800 hover:bg-azure-50"
                   } font-medium`}
                 >
                   Learn More

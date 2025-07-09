@@ -50,12 +50,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!service) {
     return {
-      title: "Service Not Found - Enable Us",
+      title: "Service Not Found - Enable Early Intervention",
     }
   }
 
   return {
-    title: `${service.title} - Enable Us`,
+    title: `${service.title} - Enable Early Intervention`,
     description: service.description,
   }
 }

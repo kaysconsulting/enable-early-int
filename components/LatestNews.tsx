@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight } from "lucide-react"
 import Link from "next/link"
@@ -73,10 +73,11 @@ export default function LatestNews() {
                 <Button
                   asChild
                   variant="ghost"
-                  className="text-orange-600 hover:text-orange-700 p-0 h-auto font-medium"
+                  className="group/btn w-full justify-between text-azure-700 hover:text-azure-800 hover:bg-azure-50 font-medium"
                 >
-                  <Link href={`/news/${item.slug}`} className="flex items-center">
-                    Read More <ArrowRight className="h-4 w-4 ml-1" />
+                  <Link href={`/news/${item.slug}`} className="flex items-center justify-between w-full">
+                    Read More
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
               </CardContent>

@@ -19,11 +19,11 @@ const articles = {
       <h2>Early Childhood Focus</h2>
       <p>The NDIS has placed particular emphasis on early childhood intervention, recognizing that early support leads to better long-term outcomes. New funding categories have been introduced specifically for developmental assessments and family coaching services.</p>
       
-      <h2>How Enable Us Can Help</h2>
+      <h2>How Enable Early Intervention Can Help</h2>
       <p>Our team stays up-to-date with all NDIS changes to ensure your family receives the best possible support. We can help you understand how these changes affect your plan and assist with any transitions needed.</p>
     `,
     date: "March 15, 2024",
-    author: "Enable Us Team",
+    author: "Enable Early Intervention Team",
     category: "NDIS Updates",
     readTime: "5 min read",
     image: "/placeholder.svg?height=400&width=800",
@@ -50,7 +50,7 @@ const articles = {
       <h2>When to Seek Support</h2>
       <p>Trust your instincts as a parent. If you have concerns about your child's development, it's always better to seek assessment early. Common signs that might indicate a need for support include delays in reaching milestones, difficulties with communication, or challenges with social interaction.</p>
       
-      <h2>Our Approach at Enable Us</h2>
+      <h2>Our Approach at Enable Early Intervention</h2>
       <p>We believe in family-centered early intervention that builds on your child's strengths while addressing areas of need. Our multidisciplinary team works closely with families to create individualized support plans that fit into your daily routines and activities.</p>
     `,
     date: "March 10, 2024",
@@ -131,12 +131,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!article) {
     return {
-      title: "Article Not Found - Enable Us",
+      title: "Article Not Found - Enable Early Intervention",
     }
   }
 
   return {
-    title: `${article.title} - Enable Us News`,
+    title: `${article.title} - Enable Early Intervention News`,
     description: article.excerpt,
   }
 }

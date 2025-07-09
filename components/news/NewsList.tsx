@@ -11,7 +11,7 @@ export default function NewsList() {
       excerpt:
         "Understanding the latest updates to NDIS funding and how they affect early childhood intervention services.",
       date: "March 15, 2024",
-      author: "Enable Us Team",
+      author: "Enable Early Intervention Team",
       category: "NDIS Updates",
       readTime: "5 min read",
       image: "/placeholder.svg?height=300&width=500",
@@ -63,7 +63,7 @@ export default function NewsList() {
       excerpt:
         "A comprehensive guide to preparing for your NDIS plan review and making the most of your planning meeting.",
       date: "February 20, 2024",
-      author: "Enable Us Team",
+      author: "Enable Early Intervention Team",
       category: "NDIS Updates",
       readTime: "6 min read",
       image: "/placeholder.svg?height=300&width=500",

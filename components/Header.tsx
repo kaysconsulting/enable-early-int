@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { services } from "@/data/services"
 import { usePathname } from "next/navigation"
-import { Phone, Mail } from "lucide-react"
+import { Phone, Mail, X, Menu, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
 
@@ -21,8 +23,10 @@ export default function Header() {
   }, [])
 
   const navigation = [
-    { name: "Services", href: "/services" },
+    { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Resources", href: "/resources" },
     { name: "News", href: "/news" },
     { name: "Contact", href: "/contact" },
   ]
@@ -34,10 +38,18 @@ export default function Header() {
     return pathname === href || pathname.startsWith(href + "/")
   }
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
+
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-teal-800 text-white py-2 hidden md:block">
+      <div className="bg-azure-800 text-white py-2 hidden md:block">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6">
@@ -68,7 +80,7 @@ export default function Header() {
                 <div className="relative overflow-hidden rounded-lg">
                   <Image
                     src="/logo.png"
-                    alt="Enable Us Logo"
+                    alt="Enable Early Intervention Logo"
                     width={280}
                     height={80}
                     className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
@@ -81,20 +93,21 @@ export default function Header() {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`relative px-4 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-orange-50 group ${
-                    isActive(item.href) ? "text-orange-500 bg-orange-50" : "text-teal-700 hover:text-orange-500"
-                  }`}
-                >
-                  {item.name}
-                  <span
-                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-orange-500 transition-all duration-300 ${
-                      isActive(item.href) ? "w-3/4" : "w-0 group-hover:w-3/4"
+                <div key={item.name} className="relative group">
+                  <Link
+                    href={item.href}
+                    className={`relative px-4 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-orange-50 group ${
+                      isActive(item.href) ? "text-orange-500 bg-orange-50" : "text-azure-700 hover:text-orange-500"
                     }`}
-                  ></span>
-                </Link>
+                  >
+                    {item.name}
+                    <span
+                      className={`absolute bottom-0 left-1/2 w-0 h-0.5 bg-orange-500 transition-all duration-200 transform -translate-x-1/2 group-hover:w-3/4 ${
+                        isActive(item.href) ? "w-3/4" : ""
+                      }`}
+                    />
+                  </Link>
+                </div>
               ))}
             </div>
 
@@ -102,7 +115,7 @@ export default function Header() {
               <Button
                 asChild
                 variant="outline"
-                className="border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent font-medium"
+                className="border-azure-600 text-azure-600 hover:bg-azure-50 bg-transparent font-medium"
               >
                 <Link href="tel:(03)9xxxxxxx">Call Now</Link>
               </Button>
@@ -119,23 +132,23 @@ export default function Header() {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={toggleMenu}
                 aria-label="Toggle menu"
                 className="relative z-50"
               >
                 <div className="relative w-6 h-6">
                   <span
-                    className={`absolute block h-0.5 w-6 bg-teal-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
                       isMenuOpen ? "rotate-45 top-3" : "top-1"
                     }`}
                   />
                   <span
-                    className={`absolute block h-0.5 w-6 bg-teal-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
                       isMenuOpen ? "opacity-0" : "top-3"
                     }`}
                   />
                   <span
-                    className={`absolute block h-0.5 w-6 bg-teal-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
                       isMenuOpen ? "-rotate-45 top-3" : "top-5"
                     }`}
                   />
@@ -152,24 +165,58 @@ export default function Header() {
           >
             <div className="pb-4 space-y-1">
               {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-4 py-3 font-medium rounded-lg transition-colors duration-200 ${
-                    isActive(item.href)
-                      ? "text-orange-500 bg-orange-50"
-                      : "text-teal-700 hover:text-orange-500 hover:bg-orange-50"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.name}>
+                  {item.hasDropdown ? (
+                    <div className="px-4">
+                      <button
+                        onClick={() => setIsServicesOpen(!isServicesOpen)}
+                        className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-azure-700 hover:bg-gray-50 rounded-md"
+                      >
+                        {item.name}
+                        <ChevronDown className={`h-4 w-4 ${isServicesOpen ? 'transform rotate-180' : ''}`} />
+                      </button>
+                      
+                      {/* Mobile Services Dropdown */}
+                      {isServicesOpen && (
+                        <div className="mt-2 space-y-1 pl-6">
+                          {services.map((service) => (
+                            <Link
+                              key={service.id}
+                              href={`/services/${service.id}`}
+                              className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-azure-700 hover:bg-gray-50 rounded-md"
+                            >
+                              {service.title}
+                            </Link>
+                          ))}
+                          <Link
+                            href="/services"
+                            className="block px-3 py-2 text-base font-medium text-azure-600 hover:text-azure-700 hover:bg-gray-50 rounded-md"
+                          >
+                            View all services →
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`block px-4 py-2 text-base font-medium ${
+                        pathname === item.href
+                          ? 'text-azure-700 bg-azure-50'
+                          : 'text-gray-700 hover:text-azure-700 hover:bg-gray-50'
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
               ))}
               <div className="px-4 py-3 space-y-3">
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  className="w-full border-azure-600 text-azure-600 hover:bg-azure-50 bg-transparent"
                 >
                   <Link href="tel:(03)9xxxxxxx" onClick={() => setIsMenuOpen(false)}>
                     Call Now
