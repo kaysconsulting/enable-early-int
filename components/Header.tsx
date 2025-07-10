@@ -5,12 +5,11 @@ import Link from "next/link"
 import Image from "next/image"
 import { services } from "@/data/services"
 import { usePathname } from "next/navigation"
-import { Phone, Mail, X, Menu, ChevronDown } from "lucide-react"
+import { Phone, Mail, X, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
 
@@ -97,7 +96,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={`relative px-4 py-2 font-medium transition-all duration-200 rounded-lg hover:bg-orange-50 group ${
-                      isActive(item.href) ? "text-orange-500 bg-orange-50" : "text-azure-700 hover:text-orange-500"
+                      isActive(item.href) ? "text-orange-500 bg-orange-50" : "text-azure-800 hover:text-orange-500"
                     }`}
                   >
                     {item.name}
@@ -115,7 +114,7 @@ export default function Header() {
               <Button
                 asChild
                 variant="outline"
-                className="border-azure-600 text-azure-600 hover:bg-azure-50 bg-transparent font-medium"
+                className="border-azure-700 text-azure-700 hover:bg-azure-50 hover:text-azure-800 bg-transparent font-medium transition-colors duration-200"
               >
                 <Link href="tel:(03)9xxxxxxx">Call Now</Link>
               </Button>
@@ -138,17 +137,17 @@ export default function Header() {
               >
                 <div className="relative w-6 h-6">
                   <span
-                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-800 transform transition-all duration-300 ${
                       isMenuOpen ? "rotate-45 top-3" : "top-1"
                     }`}
                   />
                   <span
-                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-800 transform transition-all duration-300 ${
                       isMenuOpen ? "opacity-0" : "top-3"
                     }`}
                   />
                   <span
-                    className={`absolute block h-0.5 w-6 bg-azure-700 transform transition-all duration-300 ${
+                    className={`absolute block h-0.5 w-6 bg-azure-800 transform transition-all duration-300 ${
                       isMenuOpen ? "-rotate-45 top-3" : "top-5"
                     }`}
                   />
@@ -165,58 +164,24 @@ export default function Header() {
           >
             <div className="pb-4 space-y-1">
               {navigation.map((item) => (
-                <div key={item.name}>
-                  {item.hasDropdown ? (
-                    <div className="px-4">
-                      <button
-                        onClick={() => setIsServicesOpen(!isServicesOpen)}
-                        className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-azure-700 hover:bg-gray-50 rounded-md"
-                      >
-                        {item.name}
-                        <ChevronDown className={`h-4 w-4 ${isServicesOpen ? 'transform rotate-180' : ''}`} />
-                      </button>
-                      
-                      {/* Mobile Services Dropdown */}
-                      {isServicesOpen && (
-                        <div className="mt-2 space-y-1 pl-6">
-                          {services.map((service) => (
-                            <Link
-                              key={service.id}
-                              href={`/services/${service.id}`}
-                              className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-azure-700 hover:bg-gray-50 rounded-md"
-                            >
-                              {service.title}
-                            </Link>
-                          ))}
-                          <Link
-                            href="/services"
-                            className="block px-3 py-2 text-base font-medium text-azure-600 hover:text-azure-700 hover:bg-gray-50 rounded-md"
-                          >
-                            View all services →
-                          </Link>
-                        </div>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className={`block px-4 py-2 text-base font-medium ${
-                        pathname === item.href
-                          ? 'text-azure-700 bg-azure-50'
-                          : 'text-gray-700 hover:text-azure-700 hover:bg-gray-50'
-                      }`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  )}
+                <div key={item.name} className="px-4">
+                  <Link
+                    href={item.href}
+                    className={`block px-4 py-2 text-base font-medium ${
+                      pathname === item.href
+                        ? 'text-azure-800 bg-azure-50'
+                        : 'text-gray-700 hover:text-azure-800 hover:bg-gray-50'
+                    } rounded-md`}
+                  >
+                    {item.name}
+                  </Link>
                 </div>
               ))}
               <div className="px-4 py-3 space-y-3">
                 <Button
                   asChild
                   variant="outline"
-                  className="w-full border-azure-600 text-azure-600 hover:bg-azure-50 bg-transparent"
+                  className="w-full border-azure-700 text-azure-700 hover:bg-azure-50 hover:text-azure-800 bg-transparent font-medium transition-colors duration-200"
                 >
                   <Link href="tel:(03)9xxxxxxx" onClick={() => setIsMenuOpen(false)}>
                     Call Now
