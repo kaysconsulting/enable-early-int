@@ -8,7 +8,7 @@ export interface Service {
   features: string[]
   longDescription: string[]
   icon: any
-  color: 'orange' | 'teal'
+  color: 'orange' | 'azure'
   image: string
   imageAlt: string
 }
@@ -51,7 +51,7 @@ export const services: Service[] = [
       'Advocacy and support'
     ],
     icon: Users,
-    color: 'teal',
+    color: 'azure',
     image: '/support-coordination.jpg',
     imageAlt: 'Support coordinator meeting with clients',
   },

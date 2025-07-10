@@ -38,7 +38,7 @@ export default function DownloadableResources() {
           {downloadableResources.map((resource, index) => (
             <Card
               key={index}
-              className="border-2 border-gray-100 hover:border-orange-200 transition-colors duration-200"
+              className="border-2 border-gray-100 hover:border-orange-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
               <CardHeader>
                 <div className="flex items-center justify-between">
@@ -57,10 +57,13 @@ export default function DownloadableResources() {
               <CardContent>
                 <Button
                   variant="outline"
-                  className="w-full border-teal-600 text-teal-600 hover:bg-teal-50 bg-transparent"
+                  className="group w-full border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white bg-transparent transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-md"
                 >
-                  <Download className="h-4 w-4 mr-2" />
-                  Download {resource.type}
+                  <Download className="h-4 w-4 mr-2 transition-transform duration-300 group-hover:translate-y-[-2px] group-hover:scale-110" />
+                  <span className="relative">
+                    Download {resource.type}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 ease-out"></span>
+                  </span>
                 </Button>
               </CardContent>
             </Card>

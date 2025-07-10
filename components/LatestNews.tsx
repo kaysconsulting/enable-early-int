@@ -11,8 +11,8 @@ export default function LatestNews() {
       excerpt:
         "Understanding the latest updates to NDIS funding and how they affect early childhood intervention services.",
       date: "March 15, 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      imageAlt: "NDIS planning meeting with family and support coordinator",
+      image: "/importance.jpg",
+      imageAlt: "Importance of early intervention for child development",
       slug: "ndis-changes-2024",
     },
     {
@@ -20,8 +20,8 @@ export default function LatestNews() {
       excerpt:
         "Research shows that early intervention can significantly improve outcomes for children with developmental delays.",
       date: "March 10, 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      imageAlt: "Child with therapist engaged in play-based learning activity",
+      image: "/tech.jpg",
+      imageAlt: "Therapist using technology in early intervention",
       slug: "early-intervention-importance",
     },
     {
@@ -29,8 +29,8 @@ export default function LatestNews() {
       excerpt:
         "How our community participation services are helping individuals with disabilities engage more fully in their communities.",
       date: "March 5, 2024",
-      image: "/placeholder.svg?height=200&width=300",
-      imageAlt: "Diverse group of people participating in community garden project",
+      image: "/inclusive.jpg",
+      imageAlt: "Inclusive community activities for children with disabilities",
       slug: "inclusive-communities",
     },
   ]
