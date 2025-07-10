@@ -11,11 +11,11 @@ export default function NewsList() {
       excerpt:
         "Understanding the latest updates to NDIS funding and how they affect early childhood intervention services.",
       date: "March 15, 2024",
-      author: "Enable Us Team",
+      author: "Enable Early Intervention Team",
       category: "NDIS Updates",
       readTime: "5 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "NDIS planning meeting with family and support coordinator",
+      image: "/importance.jpg",
+      imageAlt: "Importance of early intervention for child development",
       slug: "ndis-changes-2024",
       featured: true,
     },
@@ -27,8 +27,8 @@ export default function NewsList() {
       author: "Dr. Sarah Mitchell",
       category: "Child Development",
       readTime: "7 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "Child with therapist engaged in play-based learning activity",
+      image: "/tech.jpg",
+      imageAlt: "Therapist using technology in early intervention",
       slug: "early-intervention-importance",
       featured: true,
     },
@@ -40,8 +40,8 @@ export default function NewsList() {
       author: "Michael Chen",
       category: "Community Inclusion",
       readTime: "6 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "Diverse group of people participating in community garden project",
+      image: "/inclusive.jpg",
+      imageAlt: "Inclusive community activities for children with disabilities",
       slug: "inclusive-communities",
       featured: false,
     },
@@ -53,8 +53,8 @@ export default function NewsList() {
       author: "Lisa Thompson",
       category: "Employment",
       readTime: "8 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "Person with disability working confidently in modern office environment",
+      image: "/inclusive.jpg",
+      imageAlt: "Creating inclusive employment opportunities",
       slug: "employment-pathways",
       featured: false,
     },
@@ -63,11 +63,11 @@ export default function NewsList() {
       excerpt:
         "A comprehensive guide to preparing for your NDIS plan review and making the most of your planning meeting.",
       date: "February 20, 2024",
-      author: "Enable Us Team",
+      author: "Enable Early Intervention Team",
       category: "NDIS Updates",
       readTime: "6 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "Family meeting with NDIS planner reviewing documents",
+      image: "/families.jpg",
+      imageAlt: "Supporting families with NDIS planning",
       slug: "ndis-plan-reviews",
       featured: false,
     },
@@ -79,8 +79,8 @@ export default function NewsList() {
       author: "Dr. James Wilson",
       category: "Technology",
       readTime: "5 min read",
-      image: "/placeholder.svg?height=300&width=500",
-      imageAlt: "Person using assistive technology device for communication",
+      image: "/families.jpg",
+      imageAlt: "Supporting families in early intervention programs",
       slug: "technology-disability-support",
       featured: false,
     },
@@ -129,18 +129,15 @@ export default function NewsList() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 font-inter text-sm mb-4 line-clamp-3">{item.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <User className="h-4 w-4 mr-1" />
-                      {item.author}
-                    </div>
+                  <div className="flex justify-end">
                     <Button
                       asChild
                       variant="ghost"
-                      className="text-orange-600 hover:text-orange-700 p-0 h-auto font-medium"
+                      className="group/btn h-10 px-4 py-2 text-azure-700 hover:bg-azure-50 hover:text-azure-800 font-medium"
                     >
-                      <Link href={`/news/${item.slug}`} className="flex items-center">
-                        Read More <ArrowRight className="h-4 w-4 ml-1" />
+                      <Link href={`/news/${item.slug}`} className="flex items-center justify-between w-full">
+                        Read More
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </Button>
                   </div>
@@ -187,18 +184,15 @@ export default function NewsList() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 font-inter text-sm mb-4 line-clamp-2">{item.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-xs text-gray-500">
-                      <User className="h-3 w-3 mr-1" />
-                      {item.author}
-                    </div>
+                  <div className="flex justify-end">
                     <Button
                       asChild
                       variant="ghost"
-                      className="text-orange-600 hover:text-orange-700 p-0 h-auto font-medium text-sm"
+                      className="group/btn h-10 px-4 py-2 text-azure-700 hover:bg-azure-50 hover:text-azure-800 font-medium"
                     >
-                      <Link href={`/news/${item.slug}`} className="flex items-center">
-                        Read More <ArrowRight className="h-3 w-3 ml-1" />
+                      <Link href={`/news/${item.slug}`} className="flex items-center justify-between w-full">
+                        Read More
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </Button>
                   </div>

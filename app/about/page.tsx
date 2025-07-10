@@ -5,9 +5,9 @@ import OurVision from "@/components/about/OurVision"
 import WhyChooseUs from "@/components/about/WhyChooseUs"
 
 export const metadata: Metadata = {
-  title: "About Enable Us - Our Mission & Vision",
+  title: "About Enable Early Intervention - Our Mission & Vision",
   description:
-    "Learn about Enable Us - empowering individuals and families through every stage of life with tailored, compassionate, and expert support.",
+    "Learn about Enable Early Intervention - empowering individuals and families through every stage of life with tailored, compassionate, and expert support.",
 }
 
 export default function AboutPage() {

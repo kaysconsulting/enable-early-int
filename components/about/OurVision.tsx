@@ -47,7 +47,7 @@ export default function OurVision() {
           </div>
           <h3 className="text-2xl font-bold text-teal-800 mb-4 font-poppins">Our Reach</h3>
           <p className="text-gray-600 font-inter leading-relaxed max-w-2xl mx-auto">
-            Enable Us proudly supports families and participants across Australia, delivering mobile, in-home, and
+            Enable Early Intervention proudly supports families and participants across Australia, delivering mobile, in-home, and
             community-based support with consistency and care.
           </p>
         </div>

@@ -15,7 +15,7 @@ const services = {
     description:
       "We simplify the NDIS, helping you connect with the right providers, manage your plan, and achieve your goals.",
     icon: "Users",
-    color: "teal",
+    color: "azure",
   },
   "specialised-supported-employment": {
     title: "Specialised Supported Employment",
@@ -28,7 +28,7 @@ const services = {
     description:
       "Encouraging social engagement, skill-building, and confidence through tailored activities in your local area.",
     icon: "MapPin",
-    color: "teal",
+    color: "azure",
   },
   "group-centre-activities": {
     title: "Group & Centre-Based Activities",
@@ -41,7 +41,7 @@ const services = {
     description:
       "Practical support to gain, keep, or return to work—including job-readiness training and workplace access assistance.",
     icon: "Building",
-    color: "teal",
+    color: "azure",
   },
 }
 
@@ -50,12 +50,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!service) {
     return {
-      title: "Service Not Found - Enable Us",
+      title: "Service Not Found - Enable Early Intervention",
     }
   }
 
   return {
-    title: `${service.title} - Enable Us`,
+    title: `${service.title} - Enable Early Intervention`,
     description: service.description,
   }
 }

@@ -19,15 +19,15 @@ const articles = {
       <h2>Early Childhood Focus</h2>
       <p>The NDIS has placed particular emphasis on early childhood intervention, recognizing that early support leads to better long-term outcomes. New funding categories have been introduced specifically for developmental assessments and family coaching services.</p>
       
-      <h2>How Enable Us Can Help</h2>
+      <h2>How Enable Early Intervention Can Help</h2>
       <p>Our team stays up-to-date with all NDIS changes to ensure your family receives the best possible support. We can help you understand how these changes affect your plan and assist with any transitions needed.</p>
     `,
     date: "March 15, 2024",
-    author: "Enable Us Team",
+    author: "Enable Early Intervention Team",
     category: "NDIS Updates",
     readTime: "5 min read",
-    image: "/placeholder.svg?height=400&width=800",
-    imageAlt: "NDIS planning meeting with family and support coordinator",
+    image: "/importance.jpg",
+    imageAlt: "Importance of early intervention for child development",
   },
   "early-intervention-importance": {
     title: "The Importance of Early Intervention in Child Development",
@@ -50,15 +50,15 @@ const articles = {
       <h2>When to Seek Support</h2>
       <p>Trust your instincts as a parent. If you have concerns about your child's development, it's always better to seek assessment early. Common signs that might indicate a need for support include delays in reaching milestones, difficulties with communication, or challenges with social interaction.</p>
       
-      <h2>Our Approach at Enable Us</h2>
+      <h2>Our Approach at Enable Early Intervention</h2>
       <p>We believe in family-centered early intervention that builds on your child's strengths while addressing areas of need. Our multidisciplinary team works closely with families to create individualized support plans that fit into your daily routines and activities.</p>
     `,
     date: "March 10, 2024",
     author: "Dr. Sarah Mitchell",
     category: "Child Development",
     readTime: "7 min read",
-    image: "/placeholder.svg?height=400&width=800",
-    imageAlt: "Child with therapist engaged in play-based learning activity",
+    image: "/importance.jpg",
+    imageAlt: "Technology in modern disability support",
   },
   "inclusive-communities": {
     title: "Building Inclusive Communities: Our Community Participation Program",
@@ -86,8 +86,8 @@ const articles = {
     author: "Michael Chen",
     category: "Community Inclusion",
     readTime: "6 min read",
-    image: "/placeholder.svg?height=400&width=800",
-    imageAlt: "Diverse group of people participating in community garden project",
+    image: "/families.jpg",
+    imageAlt: "Inclusive community activities for children with disabilities",
   },
   "employment-pathways": {
     title: "Creating Meaningful Employment Pathways for People with Disabilities",
@@ -121,31 +121,96 @@ const articles = {
     author: "Lisa Thompson",
     category: "Employment",
     readTime: "8 min read",
-    image: "/placeholder.svg?height=400&width=800",
-    imageAlt: "Person with disability working confidently in modern office environment",
+    image: "/families.jpg",
+    imageAlt: "Supporting families with NDIS planning",
   },
+  "technology-disability-support": {
+    title: "The Role of Technology in Modern Disability Support",
+    excerpt: "Exploring how assistive technology and digital tools are transforming the way we deliver disability services.",
+    content: `
+      <p>Technology has revolutionized the way we provide support to individuals with disabilities, opening up new possibilities for independence, communication, and inclusion. From specialized apps to advanced assistive devices, technology is breaking down barriers and creating more accessible environments.</p>
+      
+      <h2>Assistive Communication Tools</h2>
+      <p>Modern augmentative and alternative communication (AAC) devices and apps have transformed how non-verbal individuals express themselves. These tools range from simple picture boards to sophisticated speech-generating devices that use eye-tracking technology.</p>
+      
+      <h2>Smart Home Integration</h2>
+      <p>Smart home technology allows individuals with physical disabilities to control their environment through voice commands or mobile apps. This includes adjusting lights, temperature, and even locking doors independently.</p>
+      
+      <h2>Wearable Technology</h2>
+      <p>Wearable devices can monitor vital signs, detect seizures, or provide location tracking for individuals who may wander. These technologies provide peace of mind for families while promoting greater independence.</p>
+      
+      <h2>Virtual Therapy Options</h2>
+      <p>Teletherapy has made support services more accessible, especially for those in remote areas. Virtual reality is also being used for social skills training and exposure therapy in a controlled, safe environment.</p>
+      
+      <h2>Our Approach to Technology</h2>
+      <p>At Enable Early Intervention, we stay at the forefront of technological advancements, carefully evaluating and implementing tools that can genuinely enhance the lives of the individuals we support. Our team provides training and support to ensure both individuals and their families can make the most of these technologies.</p>
+    `,
+    date: "February 15, 2024",
+    author: "Dr. James Wilson",
+    category: "Technology",
+    readTime: "5 min read",
+    image: "/tech.jpg",
+    imageAlt: "Modern assistive technology for disability support"
+  },
+  "ndis-plan-reviews": {
+    title: "Supporting Families Through NDIS Plan Reviews",
+    excerpt: "A comprehensive guide to preparing for your NDIS plan review and making the most of your planning meeting.",
+    content: `
+      <p>NDIS plan reviews are a crucial part of ensuring participants continue to receive the right supports to achieve their goals. A well-prepared review can make a significant difference in the outcomes for you or your family member.</p>
+      
+      <h2>Understanding the Review Process</h2>
+      <p>Plan reviews typically occur every 12 months, but can be more frequent if your circumstances change significantly. The review assesses whether your current supports are meeting your needs and if adjustments are required to help you work towards your goals.</p>
+      
+      <h2>Preparing for Your Review</h2>
+      <ul>
+        <li><strong>Gather Documentation:</strong> Collect reports, assessments, and any other relevant documents that demonstrate your needs and progress.</li>
+        <li><strong>Review Your Current Plan:</strong> Note what's working well and what isn't, including any unused funding or supports that could be better utilized.</li>
+        <li><strong>Update Your Goals:</strong> Consider if your goals have changed and how your supports can help you achieve them.</li>
+        <li><strong>Track Your Progress:</strong> Keep notes on how current supports have helped and any barriers you've encountered.</li>
+      </ul>
+      
+      <h2>During the Review Meeting</h2>
+      <p>Be prepared to discuss your current situation, any changes in your needs, and how well your current supports are working. Don't be afraid to ask questions or request clarification about any aspect of your plan.</p>
+      
+      <h2>After the Review</h2>
+      <p>You'll receive a new plan outlining your approved supports. Review it carefully to ensure it meets your needs and aligns with the discussion during your review. If you have concerns, you can request an internal review.</p>
+      
+      <h2>How We Can Help</h2>
+      <p>Our team at Enable Early Intervention can assist with every step of the review process, from preparation to implementing your new plan. We can help you understand your options, prepare documentation, and advocate for the supports you need.</p>
+    `,
+    date: "February 20, 2024",
+    author: "Enable Early Intervention Team",
+    category: "NDIS Updates",
+    readTime: "6 min read",
+    image: "/families.jpg",
+    imageAlt: "Family and support worker reviewing NDIS plan documents"
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const article = articles[params.slug as keyof typeof articles]
+  // Use the params to fetch data
+  const slug = params.slug;
+  const article = articles[slug as keyof typeof articles];
 
   if (!article) {
     return {
-      title: "Article Not Found - Enable Us",
-    }
+      title: "Article Not Found - Enable Early Intervention",
+    };
   }
 
   return {
-    title: `${article.title} - Enable Us News`,
+    title: `${article.title} - Enable Early Intervention News`,
     description: article.excerpt,
-  }
+  };
 }
 
-export default function NewsArticlePage({ params }: { params: { slug: string } }) {
-  const article = articles[params.slug as keyof typeof articles]
+export default async function NewsArticlePage({ params }: { params: { slug: string } }) {
+  // Use the params to fetch data
+  const slug = params.slug;
+  const article = articles[slug as keyof typeof articles];
 
   if (!article) {
-    notFound()
+    notFound();
   }
 
   return (

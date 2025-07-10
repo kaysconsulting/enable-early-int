@@ -87,11 +87,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-gradient-to-b from-teal-300 to-teal-400 rounded-full;
+  @apply bg-gradient-to-b from-azure-300 to-azure-400 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply from-teal-400 to-teal-500;
+  @apply from-azure-400 to-azure-500;
 }
 
 /* Smooth scrolling for anchor links */
@@ -153,8 +153,8 @@ html {
   @apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
 }
 
-.gradient-text-teal {
-  @apply bg-gradient-to-r from-teal-500 to-teal-600 bg-clip-text text-transparent;
+.gradient-text-azure {
+  @apply bg-gradient-to-r from-azure-500 to-azure-600 bg-clip-text text-transparent;
 }
 
 /* Glass morphism effect */
@@ -170,4 +170,13 @@ html {
 /* Card hover effects */
 .card-hover {
   @apply transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl;
+}
+
+/* Fix for RedirectErrorBoundary button hover colors */
+a.border-teal-600.hover\:text-accent-foreground:hover {
+  color: #0284c7 !important; /* teal-700 - darker teal */
+}
+
+a.border-azure-600.hover\:text-accent-foreground:hover {
+  color: #075985 !important; /* azure-800 - darker azure */
 }

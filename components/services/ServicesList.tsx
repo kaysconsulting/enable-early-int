@@ -11,7 +11,7 @@ export default function ServicesList() {
       title: "Early Childhood Intervention",
       slug: "early-childhood-intervention",
       description:
-        "Holistic, family-focused support for children with developmental delays or disabilities—delivered early to make a lasting impact.",
+        "Connecting families with specialists who provide holistic, family-focused support for children with developmental delays or disabilities—delivered early to make a lasting impact.",
       features: [
         "Developmental assessments",
         "Therapy services",
@@ -28,7 +28,7 @@ export default function ServicesList() {
       title: "Support Coordination",
       slug: "support-coordination",
       description:
-        "We simplify the NDIS, helping you connect with the right providers, manage your plan, and achieve your goals.",
+        "We connect you with experienced support coordinators who simplify the NDIS, helping you find the right providers, manage your plan, and achieve your goals.",
       features: ["NDIS plan management", "Provider connections", "Goal setting and review", "Advocacy and support"],
       color: "teal",
       image: "/support-coordination.jpg",
@@ -39,7 +39,7 @@ export default function ServicesList() {
       icon: Briefcase,
       title: "Specialised Supported Employment",
       slug: "specialised-supported-employment",
-      description: "Meaningful employment pathways tailored to your strengths and ambitions, with on-the-job support.",
+      description: "We connect you with employment specialists who create meaningful employment pathways tailored to your strengths and ambitions, with on-the-job support.",
       features: ["Workplace readiness", "Tailored job matching", "On-the-job coaching", "Skills development"],
       color: "orange",
       image: "/employment-services.jpg",
@@ -50,7 +50,7 @@ export default function ServicesList() {
       title: "Community Participation",
       slug: "community-participation",
       description:
-        "Encouraging social engagement, skill-building, and confidence through tailored activities in your local area.",
+        "We connect you with community programs that encourage social engagement, skill-building, and confidence through tailored activities in your local area.",
       features: [
         "Social & recreational outings",
         "Skill-building activities",
@@ -65,7 +65,7 @@ export default function ServicesList() {
       icon: UsersIcon,
       title: "Group & Centre-Based Activities",
       slug: "group-centre-activities",
-      description: "Safe, fun, and engaging group programs that foster friendships, creativity, and life skills.",
+      description: "We connect you with safe, fun, and engaging group programs that foster friendships, creativity, and life skills.",
       features: ["Social connection", "Life skills development", "Creative expression", "Wellbeing & recreation"],
       color: "orange",
       image: "/group-activities.jpg",
@@ -76,7 +76,7 @@ export default function ServicesList() {
       title: "Access and Maintain Employment",
       slug: "access-maintain-employment",
       description:
-        "Practical support to gain, keep, or return to work—including job-readiness training and workplace access assistance.",
+        "We connect you with professionals who provide practical support to gain, keep, or return to work—including job-readiness training and workplace access assistance.",
       features: [
         "Job readiness training",
         "Workplace access support",

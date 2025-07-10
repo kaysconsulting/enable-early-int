@@ -29,11 +29,11 @@ export default function AboutUsSection() {
           {/* Text Content */}
           <div className="animate-fadeInUp">
             <h2 className="text-3xl font-bold tracking-tight text-teal-800 sm:text-4xl font-poppins mb-6">
-              About Enable Us
+              About Enable Early Intervention
             </h2>
             <div className="space-y-4 text-gray-600 font-inter leading-relaxed">
               <p className="text-lg">
-                At Enable Us, we believe that every person deserves the support they need to thrive—at the very start
+                At Enable Early Intervention, we believe that every person deserves the support they need to thrive—at the very start
                 stage of life. We provide tailored NDIS services that support participants from early childhood, with a
                 strong focus on personalised care, community inclusion, and long-term independence.
               </p>

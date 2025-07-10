@@ -18,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Enable Us - Early Childhood Intervention & NDIS Services",
+  title: "Enable Early Intervention - Early Childhood Intervention & NDIS Services",
   description:
     "Guiding brighter futures with expert early childhood intervention, NDIS support coordination, and disability services. Strength for every step of your journey.",
   keywords:

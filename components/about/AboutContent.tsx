@@ -29,7 +29,7 @@ export default function AboutContent() {
           <div className="animate-fadeInUp">
             <div className="space-y-6 text-gray-600 font-inter leading-relaxed">
               <p className="text-lg">
-                At Enable Us, we exist for one reason: to empower individuals and families through every stage of life
+                At Enable Early Intervention, we exist for one reason: to empower individuals and families through every stage of life
                 with tailored, compassionate, and expert support.
               </p>
               <p>

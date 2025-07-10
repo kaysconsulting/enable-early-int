@@ -4,7 +4,7 @@ import NewsList from "@/components/news/NewsList"
 import NewsletterSignup from "@/components/news/NewsletterSignup"
 
 export const metadata: Metadata = {
-  title: "News & Insights - Enable Us",
+  title: "News & Insights - Enable Early Intervention",
   description:
     "Stay updated with the latest news, insights, and resources about NDIS services, early childhood intervention, and disability support.",
 }
